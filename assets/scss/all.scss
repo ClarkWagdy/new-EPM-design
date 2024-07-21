@@ -8,11 +8,11 @@
 .header {
   position: relative;
   font-weight: 400;
-  height: 800px;
-  background-image: url('../imgs/gallery/hero.gif');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 25px;
+  // background-image: url('../imgs/gallery/hero.gif');
+  // background-size: cover;
+  // background-repeat: no-repeat;
+  // background-position: center;
   margin-bottom: 3rem;
   .head {
     position: fixed;
@@ -36,7 +36,7 @@
           margin: 0;
 
           .logo {
-            max-width: 100px;
+            max-width: 60px;
           }
         }
 
@@ -75,7 +75,7 @@
               }
             }
 
-            
+
           }
 
           .btn-search-icon {
@@ -102,7 +102,7 @@
             background: $color-primary;
           }
 
-          
+
         }
         .user-section{
           margin-inline-start: 0.5rem;
@@ -122,7 +122,7 @@
             border-bottom: 5px solid $color-primary-green;
             border-bottom-right-radius: 15px;
             box-shadow: 2px 5px 6px rgba($color: #000000, $alpha: 0.2);
-            
+z-index: 99999;
             .dropdown-item{
               padding: .4rem 5rem;
               color: $color-primary;
@@ -185,7 +185,7 @@
       margin-inline-start: 1rem;
     }
   }
-  
+
   .e-services-body{
     .e-services-tabs{
       .tab-pane{
@@ -270,27 +270,27 @@
         height: 350px !important;
         box-shadow: none;
         text-align: start;
-        
+
         .card-img{
           width: 100%;
           padding: 0;
           img{
             width: 100%;
             height: 220px;
-            
+
           }
         }
 
         .card-body{
           padding: 0.5rem;
-          
+
           p{
             margin: 0;
           }
           .card-title{
             color: $color-primary;
             font-size: $fs-normal;
-            
+
           }
 
           .news-date-time{
@@ -330,7 +330,7 @@
 
       .gobail-region{
         transition: fill 0.5s ease-in-out;
-        
+
       }
 
       .gobail-region.active{
@@ -365,7 +365,7 @@
       .nav-item{
         height: fit-content;
         padding: 0 1rem;
-        
+
         .nav-link{
           color: #fff !important;
           border: none !important;
@@ -384,7 +384,7 @@
     .tab-content{
       width: 80%;
       padding: 1rem;
-      
+
       .tab-body{
         display: flex;
         flex-direction: column;
@@ -399,6 +399,9 @@
           color: #fff;
           justify-content: space-between;
           width: 80%;
+              background: transparent !important;
+                padding-top: 0 !important;
+                padding-bottom:0 !important;
           .stats-card{
             text-align: center;
           }
@@ -494,9 +497,9 @@
   .footer-links{
     border-bottom: 1px solid #fff;
   }
-  
+
   .list-group{
-    
+
     .list-group-item{
       width: auto;
       padding: 0.5rem;
@@ -517,4 +520,5 @@
     gap: 2.2rem;
   }
 }
+
 
