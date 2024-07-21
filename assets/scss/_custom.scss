@@ -2,11 +2,11 @@
   font-family: "TheSansArabic", "OpenSans";
 }
 
-html{
+html {
   overflow-x: hidden !important;
 }
 
-body{
+body {
   padding: 0 !important;
 }
 
@@ -14,24 +14,24 @@ body{
   box-shadow: none;
 }
 
-.btn-primary{
+.btn-primary {
   color: #fff;
   background: $color-sub-green;
   padding: 0.3rem 2rem
 }
 
-.dropdown-toggle::after{
+.dropdown-toggle::after {
   display: none;
 }
 
-section{
-  overflow-x: hidden;
+section {
+  overflow: hidden;
   margin-top: 4rem;
   margin-bottom: 2rem;
-  
+
 }
 
-textarea{
+textarea {
   border: 1px solid $color-gray-light;
   border-radius: 8px;
   color: $color-gray-dark;
@@ -39,15 +39,15 @@ textarea{
   min-height: 8rem;
 }
 
-.heading{
+.heading {
   color: $color-primary;
 }
 
-.heading-green{
+.heading-green {
   color: $color-primary-green;
 }
 
-.bold{
+.bold {
   font-weight: bold;
 }
 
@@ -55,11 +55,13 @@ textarea{
   margin: 0 0.5rem;
   padding-inline-start: 1.6rem;
   position: relative;
-  input[type="radio"]{
+
+  input[type="radio"] {
     display: none;
   }
-  span{
-    
+
+  span {
+
     display: block;
     position: absolute;
     top: auto;
@@ -68,10 +70,10 @@ textarea{
     height: 1.2rem;
     border: 1px solid $color-primary-green;
     border-radius: 50%;
-    
+
   }
 
-  input[type="radio"]:checked ~ span{
+  input[type="radio"]:checked~span {
     background-color: $color-primary-green;
     box-shadow: inset 0 0 1px 2px #fff;
   }
@@ -90,11 +92,12 @@ textarea{
 
 // Navigation
 
-  // Nav-bar
-  
-.nav-item{
+// Nav-bar
+
+.nav-item {
   position: relative;
-  .dropdown-menu{
+
+  .dropdown-menu {
     background-color: $color-primary;
     text-align: center;
     border: none;
@@ -110,27 +113,32 @@ textarea{
     padding-inline-start: 12%;
     z-index: 101;
 
-    .dropdown-body{
+    .dropdown-body {
       display: flex;
       flex-wrap: wrap;
       gap: 8%;
       padding-inline-start: 10%;
-      .nav-menu-links{
+
+      .nav-menu-links {
         text-align: start;
         padding-bottom: 1rem;
-        .menu-heading{
+
+        .menu-heading {
           padding: 0.25rem;
-          .menu-title{
+
+          .menu-title {
             color: #fff;
             font-size: $fs-lg;
             padding-inline-start: 1rem;
           }
         }
       }
-      ul{
+
+      ul {
         padding-inline-start: 3rem;
         list-style: url('../imgs/icons/bullet.svg');
-        .dropdown-item{
+
+        .dropdown-item {
           padding: 0.5rem;
           color: #fff;
           font-size: $fs-normal;
@@ -139,7 +147,7 @@ textarea{
           position: relative;
         }
 
-        .dropdown-item::after{
+        .dropdown-item::after {
           position: absolute;
           content: '';
           bottom: 0;
@@ -151,22 +159,22 @@ textarea{
           border-radius: 5px;
           background-color: rgba($color: $color-primary-green, $alpha: 1);
         }
-    
-        .dropdown-item:hover{
+
+        .dropdown-item:hover {
           background-color: transparent;
         }
 
-        .dropdown-item:hover::after{
+        .dropdown-item:hover::after {
           opacity: 1;
         }
       }
     }
-    
+
 
 
   }
 
-  .dropdown-menu::after{
+  .dropdown-menu::after {
     content: '';
     background-image: url('../imgs//patterns/dropdown-pattern.svg');
     background-position: bottom;
@@ -179,13 +187,14 @@ textarea{
     width: 100%;
   }
 
-  .dropdown-menu.show{
+  .dropdown-menu.show {
     height: fit-content;
     opacity: 1;
     padding: 2rem 2rem 5rem !important;
     min-height: 350px;
   }
 }
+
 .nav-item::after {
   content: "";
   position: absolute;
@@ -206,45 +215,51 @@ textarea{
   opacity: 1;
 }
 
-  // Nav Tabs
-.nav-tabs{
+// Nav Tabs
+.nav-tabs {
   border: none;
   justify-content: center;
   gap: 5%;
-  .nav-item{
+
+  .nav-item {
     border: none;
-    .nav-link{
+
+    .nav-link {
       border: none;
       color: $color-primary;
       font-weight: 300;
       font-size: $fs-xl;
     }
 
-    .nav-link.active{
+    .nav-link.active {
       font-weight: bold;
     }
   }
-  .nav-item::after{
+
+  .nav-item::after {
     background: $color-primary;
     height: 1.5px;
   }
-  .nav-item:has(.nav-link.active)::after{
+
+  .nav-item:has(.nav-link.active)::after {
     opacity: 1;
   }
-  
+
 }
 
 // Swiper
-.slide-container{
-  .slide-content{
+.slide-container {
+  .slide-content {
     display: flex;
     align-items: center;
-    .btn-slide{
-      img{
+
+    .btn-slide {
+      img {
         width: 50px;
       }
     }
-    .card-wrapper{
+
+    .card-wrapper {
       display: flex;
       justify-content: start;
       // gap: 15px;
@@ -253,9 +268,11 @@ textarea{
       overflow-y: hidden;
       scroll-snap-type: x mandatory;
       padding: 0.5rem;
-      -ms-overflow-style: none;  /* IE and Edge */
+      -ms-overflow-style: none;
+      /* IE and Edge */
       scrollbar-width: none;
-      .card{
+
+      .card {
         scroll-snap-align: center;
         flex-shrink: 0;
         margin: 0 10px;
@@ -264,23 +281,25 @@ textarea{
         height: 230px;
         box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.1);
         border: none;
-        border-radius:14px;
+        border-radius: 14px;
         text-align: center;
-        .card-img{
+
+        .card-img {
           padding: 1rem 1rem 0;
-          flex:1;
-          img{
+          flex: 1;
+
+          img {
             height: 100px;
           }
         }
 
-        .card-body{
-          .card-title{
+        .card-body {
+          .card-title {
             font-size: $fs-lg;
             color: $color-gray-dark;
           }
 
-          .card-sub-title{
+          .card-sub-title {
             background: $color-gray-light;
             color: $color-primary;
             font-size: $fs-md;
@@ -292,13 +311,14 @@ textarea{
     }
 
     .card-wrapper::-webkit-scrollbar {
-      display: none;  /* Chrome, Safari and Opera */
+      display: none;
+      /* Chrome, Safari and Opera */
     }
   }
 }
 
 // Horizontal Accordion
-.h-accordion{
+.h-accordion {
   display: flex;
   flex-direction: row-reverse;
   justify-content: flex-end;
@@ -309,17 +329,19 @@ textarea{
   height: calc(100% + 15px);
   width: 100%;
 
-  .accordion-item.default{
+  .accordion-item.default {
     width: 0;
 
-    .accordion-body{
+    .accordion-body {
       justify-content: flex-end;
-      .accordion-title{
+
+      .accordion-title {
         margin-inline-end: 5rem;
       }
     }
   }
-  .accordion-item{
+
+  .accordion-item {
     background: transparent;
     display: flex;
     flex-direction: row-reverse;
@@ -327,7 +349,8 @@ textarea{
     align-items: center;
     transition: all 0.5s ease;
     width: 80px;
-    .accordion-header{
+
+    .accordion-header {
       min-width: 80px;
       height: 100%;
       display: flex;
@@ -335,11 +358,12 @@ textarea{
       align-items: center;
       background: $color-gray-light;
       box-shadow: -4px 0 6px -1px rgba(255, 255, 255, 0.8),
-                      -2px 0 4px 0px rgba(0, 0, 0, 0.6);
+        -2px 0 4px 0px rgba(0, 0, 0, 0.6);
       // border-right: 1px solid rgba($color: #d2d2d2, $alpha: 1);
       padding: 0 0.2rem;
       position: relative;
-      .accordion-collapse-btn{
+
+      .accordion-collapse-btn {
         cursor: pointer;
         position: absolute;
         text-align: center;
@@ -354,7 +378,7 @@ textarea{
       }
     }
 
-    .accordion-body{
+    .accordion-body {
       margin: -5px -10px;
       display: flex;
       width: 0;
@@ -365,73 +389,79 @@ textarea{
       align-items: center;
       justify-content: space-between;
       gap: 5%;
-      .accordion-title{
+
+      .accordion-title {
         margin: -5px -10px;
         height: calc(100% + 5px);
         width: fit-content;
         min-width: 350px;
         align-content: center;
-        h1{
+
+        h1 {
           font-size: 44px;
           text-align: center;
         }
-        img{
+
+        img {
           height: calc(100% + 5px);
         }
       }
 
-      .accordion-content{
+      .accordion-content {
         padding: 2rem 4rem;
         font-size: $fs-lg;
       }
 
-      .accordion-content.quotes{
+      .accordion-content.quotes {
         margin: 2rem 6rem;
         line-height: 40px;
         font-weight: 400;
         font-size: $fs-xl;
         max-width: 700px;
         text-align: justify;
-        
+
         position: relative;
-        .quote-speaker{
+
+        .quote-speaker {
           color: $color-primary-green;
           font-size: $fs-normal;
           font-weight: 400;
           line-height: 20px;
-          span{
+
+          span {
             display: block;
           }
 
         }
-        .bar{
+
+        .bar {
           position: absolute;
           background-color: $color-primary-green;
-          
+
         }
 
-        .bar-top{
+        .bar-top {
           left: 0;
           top: 0;
           height: 0.25rem;
           width: 90%;
         }
 
-        .bar-bottom{
+        .bar-bottom {
           right: 0;
           bottom: 0;
           height: 0.25rem;
           width: 90%;
         }
 
-        .bar-left{
+        .bar-left {
           left: 0;
           top: 0;
           width: 0.25rem;
           height: 85%;
         }
 
-        .bar-right{
+        .bar-right {
           right: 0;
           bottom: 0;
           width: 0.25rem;
@@ -440,7 +470,7 @@ textarea{
       }
 
       .accordion-content.quotes::before,
-      .accordion-content.quotes::after{
+      .accordion-content.quotes::after {
         content: '';
         position: absolute;
         background-position: center;
@@ -448,16 +478,17 @@ textarea{
         background-repeat: no-repeat;
       }
 
-      .accordion-content.quotes::before{
+      .accordion-content.quotes::before {
         width: 80px;
         height: 60px;
         background-image: url('../imgs/icons/qoute-right.svg');
         top: -20px;
         right: -20px;
 
-        
+
       }
-      .accordion-content.quotes::after{
+
+      .accordion-content.quotes::after {
         width: 75px;
         height: 60px;
         background-image: url('../imgs/icons/qoute-left.svg');
@@ -465,7 +496,7 @@ textarea{
         left: -15px;
       }
 
-      .card-wrapper{
+      .card-wrapper {
         display: flex;
         flex-wrap: wrap;
         height: 100%;
@@ -474,7 +505,8 @@ textarea{
         justify-content: center;
         align-items: center;
         column-gap: 4%;
-        .card-circular{
+
+        .card-circular {
           padding: 1rem;
           width: 150px;
           height: 150px;
@@ -487,13 +519,16 @@ textarea{
     }
 
   }
-  .accordion-item.show{
+
+  .accordion-item.show {
     width: 100%;
     transition: all 0.5s ease;
-    .accordion-header{
+
+    .accordion-header {
       border-radius: 0 20px 20px 0;
     }
-    .accordion-body{
+
+    .accordion-body {
       transition: opacity 0.5s ease 0.5s;
       width: 100%;
       height: calc(100% + 5px);
@@ -501,13 +536,10 @@ textarea{
     }
   }
 
-  .accordion-item.close{
-    .accordion-header{
+  .accordion-item.close {
+    .accordion-header {
       box-shadow: none !important;
       border-radius: 20px 0 0 20px;
     }
   }
 }
-
-
-
